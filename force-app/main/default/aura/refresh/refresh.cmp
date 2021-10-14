@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes, force:hasRecordId">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:handler event="aura:locationChange" action="{!c.update}"/>
+    <button onclick="{!c.refresh}">refresh</button>
+</aura:component>	
